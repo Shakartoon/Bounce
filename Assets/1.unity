@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 151995559}
   - component: {fileID: 151995560}
   - component: {fileID: 151995561}
+  - component: {fileID: 151995562}
   m_Layer: 0
   m_Name: lavender_block
   m_TagString: lavendar_rect
@@ -197,7 +198,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 151995556}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 593df0edbacadc8488a35c6d6fc62e49, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -314,6 +315,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &151995562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 151995556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
 --- !u!1 &245432108 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1763630084814030, guid: 5c0e473442420f14d83f83e8b6607a75,
@@ -429,6 +445,7 @@ GameObject:
   - component: {fileID: 306124423}
   - component: {fileID: 306124422}
   - component: {fileID: 306124424}
+  - component: {fileID: 306124427}
   - component: {fileID: 306124425}
   - component: {fileID: 306124426}
   m_Layer: 0
@@ -624,6 +641,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &306124427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306124421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
 --- !u!1 &423965754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4439,6 +4471,8 @@ GameObject:
   - component: {fileID: 494172987}
   - component: {fileID: 494172988}
   - component: {fileID: 494172989}
+  - component: {fileID: 494172987}
+  - component: {fileID: 494172988}
   m_Layer: 0
   m_Name: green_block
   m_TagString: cg1
@@ -4628,6 +4662,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 14.78}
   m_EdgeRadius: 0
+--- !u!114 &494172987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494172984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
+--- !u!50 &494172988
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494172984}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 593df0edbacadc8488a35c6d6fc62e49, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &527715874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,8 +6177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRotating: 0
   screenPoint: {x: 0, y: 0, z: 0}
   offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
 --- !u!82 &1362251415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6421,6 +6492,7 @@ GameObject:
   - component: {fileID: 1634096235}
   - component: {fileID: 1634096234}
   - component: {fileID: 1634096236}
+  - component: {fileID: 1634096238}
   - component: {fileID: 1634096237}
   m_Layer: 0
   m_Name: darkgreen_block
@@ -6535,6 +6607,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1634096238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634096233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
 --- !u!1 &1715819693
 GameObject:
   m_ObjectHideFlags: 0
