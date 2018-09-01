@@ -5,7 +5,8 @@ using UnityEngine;
 public class mouseoverselect : MonoBehaviour {
 
 	private Vector3 mousePosition; 
-	public float moveSpeed = 0.5f; 
+	public float moveSpeed = 0.5f;
+    public bool mouseIsover = false;
 
 	public GameObject greenCircle; 
 
@@ -19,13 +20,14 @@ public class mouseoverselect : MonoBehaviour {
 
 	}
 
-	void OnMouseOver () { 
+	void OnMouseDown() { 
 
 		Debug.Log ("Did this work?"); 
 		mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 		transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-		SpriteRenderer m = greenCircle.GetComponent<SpriteRenderer> (); 
+		SpriteRenderer m = greenCircle.GetComponent<SpriteRenderer> ();
+        mouseIsover = true;
 		m.enabled = true; 
 	
 
@@ -42,9 +44,10 @@ public class mouseoverselect : MonoBehaviour {
 		// } 
 	} 
 
-	void OnMouseExit () { 
+	void OnMouseUp () { 
 		Debug.Log ("Yes it did"); 
-		SpriteRenderer m = greenCircle.GetComponent<SpriteRenderer> (); 
+		SpriteRenderer m = greenCircle.GetComponent<SpriteRenderer> ();
+        mouseIsover = false;
 		m.enabled = false; 
 
 		// if two fingers, move 
