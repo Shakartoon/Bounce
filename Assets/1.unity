@@ -384,6 +384,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &245432108 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1763630084814030, guid: 5c0e473442420f14d83f83e8b6607a75,
+    type: 2}
+  m_PrefabInternal: {fileID: 855162162}
+--- !u!4 &245432109 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75,
+    type: 2}
+  m_PrefabInternal: {fileID: 855162162}
+--- !u!61 &245432110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245432108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &306124421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,6 +5279,109 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de61012e346e822488a19b29751256fe, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &855162162
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1715819694}
+    m_Modifications:
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.0456606
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.9295444
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.114807956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4706868321922846, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763630084814030, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+      propertyPath: m_Name
+      value: Horizontal Invisible wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212665559510113262, guid: 5c0e473442420f14d83f83e8b6607a75,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5c0e473442420f14d83f83e8b6607a75, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &904532303 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 907185547}
+--- !u!1001 &907185547
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1715819694}
+    m_Modifications:
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.530148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.4844944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.114807956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212342263269164210, guid: de61012e346e822488a19b29751256fe,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: de61012e346e822488a19b29751256fe, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &934241467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,6 +5483,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1116486637 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe,
+    type: 2}
+  m_PrefabInternal: {fileID: 1162254494}
 --- !u!4 &1116486637 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4648210762081378, guid: de61012e346e822488a19b29751256fe,
