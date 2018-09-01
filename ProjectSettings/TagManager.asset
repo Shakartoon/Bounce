@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - beatball
+  - pink_rect
   layers:
   - Default
   - TransparentFX
