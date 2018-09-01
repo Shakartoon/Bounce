@@ -11,6 +11,11 @@ TagManager:
   - cy2
   - cy3
   - cy4
+  - cdg1
+  - cdg2
+  - cdg3
+  - cdg4
+  - cg1
   layers:
   - Default
   - TransparentFX

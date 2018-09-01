@@ -46,6 +46,36 @@ public class PlayerCollision : MonoBehaviour {
 
 		} 
 
+		if (col.collider.tag == "cdg1") {
+
+			Services.audioManager.Play("humming"); 
+
+		} 
+
+		if (col.collider.tag == "cdg2") {
+
+			Services.audioManager.Play("singing"); 
+
+		} 
+
+		if (col.collider.tag == "cdg3") {
+
+			Services.audioManager.Play("goodboy"); 
+
+		} 
+
+		if (col.collider.tag == "cdg4") {
+
+			Services.audioManager.Play("cutesound"); 
+
+		} 
+
+		if (col.collider.tag == "cg1") {
+
+			Services.audioManager.Play("secrets"); 
+
+		} 
+
 	}  
 
 }
