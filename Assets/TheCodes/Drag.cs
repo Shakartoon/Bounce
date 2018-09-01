@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour {
 
-
+    public bool isRotating;
 	public Vector3 screenPoint; 
-	public Vector3 offset;  
- 
-	void Start () {
+	public Vector3 offset;
+    public float degreesPerSec = 360f;
+
+
+    void Start () {
 	}
 
 
@@ -16,9 +18,15 @@ public class Drag : MonoBehaviour {
 
 	}
 
+    void OnMouseOver(){
+        if (Input.GetMouseButtonDown(1)){
+            float rotAmount = degreesPerSec * Time.deltaTime;
+            float curRot = transform.localRotation.eulerAngles.z;
+            transform.localRotation = Quaternion.Euler(new Vector3(0, 0, curRot + rotAmount));
+        }
+    }
 
-
-	void OnMouseDown()
+    void OnMouseDown()
 	{
 		screenPoint = Camera.main.WorldToScreenPoint(transform.position);
 		offset =  transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,screenPoint.z));
@@ -29,6 +37,11 @@ public class Drag : MonoBehaviour {
 		Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
 		Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 		transform.position = curPosition;
+
+        //if (isRotating == true)
+        //{
+            
+        //}
 	}
 
 }
