@@ -22,6 +22,30 @@ public class PlayerCollision : MonoBehaviour {
 
 		} 
 	
+		if (col.collider.tag == "cy1") {
+
+			Services.audioManager.Play("synth1"); 
+
+		} 
+
+		if (col.collider.tag == "cy2") {
+
+			Services.audioManager.Play("synth2"); 
+
+		} 
+
+		if (col.collider.tag == "cy3") {
+
+			Services.audioManager.Play("synth3"); 
+
+		} 
+
+		if (col.collider.tag == "cy4") {
+
+			Services.audioManager.Play("synth4"); 
+
+		} 
+
 	}  
 
 }

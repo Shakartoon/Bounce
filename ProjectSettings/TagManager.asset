@@ -7,6 +7,10 @@ TagManager:
   - beatball
   - pink_rect
   - lavendar_rect
+  - cy1
+  - cy2
+  - cy3
+  - cy4
   layers:
   - Default
   - TransparentFX
