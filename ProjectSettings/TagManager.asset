@@ -6,6 +6,7 @@ TagManager:
   tags:
   - beatball
   - pink_rect
+  - lavendar_rect
   layers:
   - Default
   - TransparentFX

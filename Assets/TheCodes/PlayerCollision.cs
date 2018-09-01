@@ -15,6 +15,12 @@ public class PlayerCollision : MonoBehaviour {
 			Services.audioManager.Play("drumloop1"); 
 			 
 		} 
+
+		if (col.collider.tag == "lavendar_rect") {
+
+			Services.audioManager.Play("icecreamsound"); 
+
+		} 
 	
 	}  
 
