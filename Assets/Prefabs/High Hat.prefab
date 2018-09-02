@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 50307943677924938}
   - component: {fileID: 61642650878127326}
   m_Layer: 0
-  m_Name: High Hat
-  m_TagString: Snare
+  m_Name: Snare
+  m_TagString: Highhat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
