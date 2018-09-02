@@ -1480,7 +1480,7 @@ Prefab:
     - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
         type: 2}
       propertyPath: mySounds.Array.size
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4906721167461836, guid: 3db5c7b38b8f17345870cbabc2572775, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1552,6 +1552,66 @@ Prefab:
     - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
         type: 2}
       propertyPath: mySounds.Array.data[12].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[13].name
+      value: Snare Drum
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 741628dcaad274e4e98ab9e532c7b11f, type: 3}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[13].volume
+      value: 0.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[13].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[14].name
+      value: High Hat
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[14].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d6e2bcb8d974076489227d27de76db47, type: 3}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[14].volume
+      value: 0.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[14].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[15].name
+      value: Rhodes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bed315f2caf8a824cbc37722e844df8e, type: 3}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[15].volume
+      value: 0.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377283333748140, guid: 3db5c7b38b8f17345870cbabc2572775,
+        type: 2}
+      propertyPath: mySounds.Array.data[15].pitch
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
