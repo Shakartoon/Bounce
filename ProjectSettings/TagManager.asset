@@ -16,6 +16,9 @@ TagManager:
   - cdg3
   - cdg4
   - cg1
+  - menu
+  - CircleRespawn
+  - BlockRespawn
   layers:
   - Default
   - TransparentFX
