@@ -19,6 +19,7 @@ TagManager:
   - menu
   - CircleRespawn
   - BlockRespawn
+  - sparkle
   layers:
   - Default
   - TransparentFX
