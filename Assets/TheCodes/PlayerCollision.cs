@@ -95,6 +95,12 @@ public class PlayerCollision : MonoBehaviour {
             Services.audioManager.Play("Metronome");
 
         }
+        if (col.collider.tag == "Rhodes")
+        {
+
+            Services.audioManager.Play("Rhodes");
+
+        }
     }
 
 //	IEnumerator stopSparkles()

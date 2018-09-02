@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 105231268}
   - component: {fileID: 105231267}
   - component: {fileID: 105231266}
+  - component: {fileID: 105231270}
   m_Layer: 0
   m_Name: Rhodes
   m_TagString: Rhodes
@@ -139,7 +140,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 105231265}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6a8c1ab9a38ca0043b3ed1eb39c3c8fe, type: 2}
+  m_Material: {fileID: 6200000, guid: 6ed48ab56c3c75e4eb0bea0097f39ae3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -233,6 +234,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105231270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105231265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570fa9028027b46d4b1cd66380bf06e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
 --- !u!1 &151995556
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,11 +831,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4022071243534244, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.73
+      value: -0.755
       objectReference: {fileID: 0}
     - target: {fileID: 4022071243534244, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.09
+      value: -2.38
       objectReference: {fileID: 0}
     - target: {fileID: 4022071243534244, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
       propertyPath: m_LocalPosition.z
@@ -844,6 +860,10 @@ Prefab:
     - target: {fileID: 4022071243534244, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022071243534244, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.1005495
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d44dacd5b65cfe2419e593f69aed6506, type: 2}
