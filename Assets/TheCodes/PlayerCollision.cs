@@ -119,6 +119,24 @@ public class PlayerCollision : MonoBehaviour {
             Services.audioManager.Play("Snare Drum");
 
         }
+        if (col.collider.tag == "Thoughts")
+        {
+
+            Services.audioManager.Play("Thoughts");
+
+        }
+        if (col.collider.tag == "Crickets")
+        {
+
+            Services.audioManager.Play("Crickets");
+
+        }
+        if (col.collider.tag == "Hustling")
+        {
+
+            Services.audioManager.Play("Hustling");
+
+        }
     }
 
 //	IEnumerator stopSparkles()
