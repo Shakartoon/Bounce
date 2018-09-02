@@ -21,6 +21,8 @@ TagManager:
   - BlockRespawn
   - Metronome
   - Rhodes
+  - Snare
+  - Highhat
   layers:
   - Default
   - TransparentFX
