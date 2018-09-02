@@ -94,8 +94,50 @@ public class PlayerCollision : MonoBehaviour {
 
 			Services.audioManager.Play ("secrets"); 
 
-		} 
-	}
+		}
+        if (col.collider.tag == "Metronome")
+        {
+
+            Services.audioManager.Play("Metronome");
+
+        }
+        if (col.collider.tag == "Rhodes")
+        {
+
+            Services.audioManager.Play("Rhodes");
+
+        }
+        if (col.collider.tag == "Snare")
+        {
+
+            Services.audioManager.Play("High Hat");
+
+        }
+        if (col.collider.tag == "Highhat")
+        {
+
+            Services.audioManager.Play("Snare Drum");
+
+        }
+        if (col.collider.tag == "Thoughts")
+        {
+
+            Services.audioManager.Play("Thoughts");
+
+        }
+        if (col.collider.tag == "Crickets")
+        {
+
+            Services.audioManager.Play("Crickets");
+
+        }
+        if (col.collider.tag == "Hustling")
+        {
+
+            Services.audioManager.Play("Hustling");
+
+        }
+    }
 
 //	IEnumerator stopSparkles()
 //	{

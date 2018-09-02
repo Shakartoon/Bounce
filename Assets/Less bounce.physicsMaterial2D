@@ -6,5 +6,5 @@ PhysicsMaterial2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Less bounce
-  friction: 2
-  bounciness: 1
+  friction: 1
+  bounciness: 0.5

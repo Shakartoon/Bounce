@@ -19,7 +19,14 @@ TagManager:
   - menu
   - CircleRespawn
   - BlockRespawn
+  - Metronome
+  - Rhodes
+  - Snare
+  - Highhat
   - sparkle
+  - Crickets
+  - Hustling
+  - Thoughts
   layers:
   - Default
   - TransparentFX

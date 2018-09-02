@@ -5,22 +5,35 @@ using UnityEngine;
 public class menu_button : MonoBehaviour {
 
 
-	public GameObject menuPrefab; 
-	//public bool mousePressed = false; 
+    public GameObject menuPrefab;
+    //public bool mousePressed = false; 
+    public bool menuOpen = false;
 
-	void Start () {
+    void Start() {
 
-		menuPrefab.SetActive (false); 
+        menuPrefab.SetActive(false);
 
-	}
-	
-	void Update () {
+    }
 
-		if (Input.GetMouseButtonDown (0)) {
+    // Update is called once per frame
+    void Update() {
+    }
 
-			Debug.Log ("Licked"); 	
-			menuPrefab.SetActive (true); 
-		} 
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
 
-	}
+            Debug.Log("Licked");
+            menuPrefab.SetActive(true);
+            menuOpen = true;
+        }
+    }
+    void OnMouseDown()
+    {
+        if (menuOpen == true && (Input.GetMouseButtonDown(0)))
+            {
+            menuPrefab.SetActive(false);
+        }
+    }
 }
