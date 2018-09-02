@@ -36,6 +36,14 @@ public class PlayerCollision : MonoBehaviour {
 			 
 		} 
 
+
+		if (col.collider.tag == "hh") {
+
+			Services.audioManager.Play ("hh"); 
+
+		} 
+
+
 		if (col.collider.tag == "lavendar_rect") {
 
 			Services.audioManager.Play ("icecreamsound"); 
