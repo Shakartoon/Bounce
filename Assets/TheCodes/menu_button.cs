@@ -5,18 +5,19 @@ using UnityEngine;
 public class menu_button : MonoBehaviour {
 
 
-	public GameObject menuPrefab;
+    public GameObject menuPrefab;
     //public bool mousePressed = false; 
     public bool menuOpen = false;
 
-	void Start () {
+    void Start() {
 
-		menuPrefab.SetActive (false); 
+        menuPrefab.SetActive(false);
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update() {
+    }
 
     void OnMouseOver()
     {
@@ -29,17 +30,10 @@ public class menu_button : MonoBehaviour {
         }
     }
     void OnMouseDown()
-        {
-        if (menuOpen == true && Input.GetMouseButtonDown(0))
+    {
+        if (menuOpen == true && (Input.GetMouseButtonDown(0)))
             {
-                menuPrefab.SetActive(false);
-            }
+            menuPrefab.SetActive(false);
         }
-
-	}
-
-	}
-
-    // Update is called once per frame
-    void Update() {
     }
+}
