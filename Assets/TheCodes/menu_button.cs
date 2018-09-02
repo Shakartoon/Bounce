@@ -14,10 +14,9 @@ public class menu_button : MonoBehaviour {
 		menuPrefab.SetActive (false); 
 
 	}
-
-    // Update is called once per frame
-    void Update() {
-    }
+	
+	// Update is called once per frame
+	void Update () {
 
     void OnMouseOver()
     {
@@ -38,3 +37,9 @@ public class menu_button : MonoBehaviour {
         }
 
 	}
+
+	}
+
+    // Update is called once per frame
+    void Update() {
+    }

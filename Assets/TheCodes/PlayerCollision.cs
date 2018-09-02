@@ -9,6 +9,8 @@ public class PlayerCollision : MonoBehaviour {
 //	public ParticleSystem.TriggerModule sparkle;
 //	public Transform sparkle; 
 
+	public GameObject sparkles; 
+
 	void Start () {
 
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = false;   
@@ -18,6 +20,10 @@ public class PlayerCollision : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col) {
 		Debug.Log ("Collision Detected.");
+					
+//		SpriteRenderer c = sparkles.GetComponent<SpriteRenderer> ();
+//		c.enabled = true;  
+		 
 
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = true; 
 //		StartCoroutine (stopSparkles); 
@@ -122,4 +128,6 @@ public class PlayerCollision : MonoBehaviour {
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = false; 
 //
 //	}
+
+
 }
