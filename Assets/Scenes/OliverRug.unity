@@ -2731,7 +2731,7 @@ GameObject:
   - component: {fileID: 1355349869}
   m_Layer: 0
   m_Name: Asset 15
-  m_TagString: Snare
+  m_TagString: Metronome
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,7 +2787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1355349866}
   m_LocalRotation: {x: -0, y: -0, z: -0.38369846, w: 0.92345846}
-  m_LocalPosition: {x: -5.26, y: -4.31, z: 0}
+  m_LocalPosition: {x: -5.26, y: -4.31, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3444,7 +3444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4618539391245558, guid: fb127c38db0c44109987c7cf74f93328, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4618539391245558, guid: fb127c38db0c44109987c7cf74f93328, type: 2}
       propertyPath: m_LocalRotation.x

@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1493562016975814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.23, y: -4.39, z: 0}
+  m_LocalPosition: {x: -12.57, y: -2.42, z: 0}
   m_LocalScale: {x: 0.49602133, y: 0.23146299, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -185,6 +185,31 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: singing
     clip: {fileID: 8300000, guid: 2a5aa897ceab640338281c4ae79c5b4c, type: 3}
+    volume: 0.202
+    pitch: 1
+    source: {fileID: 0}
+  - name: Metronome
+    clip: {fileID: 8300000, guid: 89b8254ec62d43c438091377fdb675bf, type: 3}
+    volume: 0.202
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rhodes
+    clip: {fileID: 8300000, guid: bed315f2caf8a824cbc37722e844df8e, type: 3}
+    volume: 0.202
+    pitch: 1
+    source: {fileID: 0}
+  - name: Snare Drum
+    clip: {fileID: 8300000, guid: 741628dcaad274e4e98ab9e532c7b11f, type: 3}
+    volume: 0.202
+    pitch: 1
+    source: {fileID: 0}
+  - name: High Hat
+    clip: {fileID: 8300000, guid: d6e2bcb8d974076489227d27de76db47, type: 3}
+    volume: 0.202
+    pitch: 1
+    source: {fileID: 0}
+  - name: Rhodes
+    clip: {fileID: 8300000, guid: bed315f2caf8a824cbc37722e844df8e, type: 3}
     volume: 0.202
     pitch: 1
     source: {fileID: 0}
