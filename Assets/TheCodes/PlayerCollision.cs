@@ -137,6 +137,18 @@ public class PlayerCollision : MonoBehaviour {
             Services.audioManager.Play("Hustling");
 
         }
+        if (col.collider.tag == "Armenian")
+        {
+
+            Services.audioManager.Play("Armenian");
+
+        }
+        if (col.collider.tag == "Cinematic")
+        {
+
+            Services.audioManager.Play("Cinematic");
+
+        }
     }
 
 //	IEnumerator stopSparkles()
