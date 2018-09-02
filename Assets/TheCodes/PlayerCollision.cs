@@ -88,8 +88,14 @@ public class PlayerCollision : MonoBehaviour {
 
 			Services.audioManager.Play ("secrets"); 
 
-		} 
-	}
+		}
+        if (col.collider.tag == "Metronome")
+        {
+
+            Services.audioManager.Play("Metronome");
+
+        }
+    }
 
 //	IEnumerator stopSparkles()
 //	{
