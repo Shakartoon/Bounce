@@ -71,18 +71,20 @@ public class mouseoverselect : MonoBehaviour {
     void OnMouseOver()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && (this.isFrozen == false))
         {
             //transform.position = mousePosition;
-            this.rb2d.simulated = false;
-            isFrozen = true;
+            //this.rb2d.isKinematic = true;
+            this.rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            this.isFrozen = true;
         }
 
-        //if (Input.GetKeyDown(KeyCode.Space) && (isFrozen == true))
-        //{
-        //    rb2d.simulated = true;
-        //    isFrozen = false;
-        //}
+        else if (Input.GetKeyDown(KeyCode.Space) && (this.isFrozen == true))
+        {
+            Debug.Log("You're on the right track...");
+            this.rb2d.constraints = RigidbodyConstraints2D.None;
+            this.isFrozen = false;
+        }
 
     }
 }
