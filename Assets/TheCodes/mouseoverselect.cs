@@ -7,7 +7,8 @@ public class mouseoverselect : MonoBehaviour {
 	private Vector3 mousePosition; 
 	public float moveSpeed = 0.5f;
     public bool mouseIsover = false;
-
+    public Rigidbody2D rb2d;
+    private bool isFrozen;
 	public GameObject greenCircle; 
 
 	// Use this for initialization
@@ -16,9 +17,22 @@ public class mouseoverselect : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.position = mousePosition;
+            rb2d.simulated = false;
+            isFrozen = true;
+        }
 
-	}
+        if (Input.GetKeyDown(KeyCode.Space) && (isFrozen == true))
+        {
+            rb2d.simulated = true;
+            isFrozen = false;
+        }
+
+    }
 
 	void OnMouseDown() { 
 
@@ -28,21 +42,20 @@ public class mouseoverselect : MonoBehaviour {
 		transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
 		SpriteRenderer m = greenCircle.GetComponent<SpriteRenderer> ();
         mouseIsover = true;
-		m.enabled = true; 
-	
+		m.enabled = true;
 
-		//Enable the two finger thing? 
+        //Enable the two finger thing? 
 
-		// Find the mesh renderer "greenCricle1" and enable. DID IT BITCH 
+            // Find the mesh renderer "greenCricle1" and enable. DID IT BITCH 
 
 
-		// if (OnMouseOver == true) {
-		
-		//Allow Double Mouse movement to happen 
-		// If not, do not allow 
+            // if (OnMouseOver == true) {
 
-		// } 
-	} 
+            //Allow Double Mouse movement to happen 
+            // If not, do not allow 
+
+            // } 
+    } 
 
 	void OnMouseUp () { 
 		Debug.Log ("Yes it did"); 
