@@ -8,8 +8,9 @@ public class mouseoverselect : MonoBehaviour {
 	public float moveSpeed = 0.5f;
     public bool mouseIsover = false;
     public Rigidbody2D rb2d;
-    private bool isFrozen = false;
-	public GameObject greenCircle; 
+    public bool isFrozen = false;
+	public GameObject greenCircle;
+    public DragBall ballDrag;
 
 	// Use this for initialization
 	void Start () {
@@ -31,13 +32,6 @@ public class mouseoverselect : MonoBehaviour {
         mouseIsover = true;
 		m.enabled = true;
 
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //transform.position = mousePosition;
-            rb2d.simulated = false;
-            isFrozen = true;
-        }
 
         //if (Input.GetKeyDown(KeyCode.Space) && (isFrozen == true))
         //{
@@ -71,18 +65,15 @@ public class mouseoverselect : MonoBehaviour {
     void OnMouseOver()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && (this.isFrozen == false))
+        if ((Input.GetKeyDown(KeyCode.Space) && (this.isFrozen == false) && (this.ballDrag.beingDragged == false)))
         {
-            //transform.position = mousePosition;
-            //this.rb2d.isKinematic = true;
-            this.rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            this.rb2d.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY; //Makes rigidbody freeze x and y axis
             this.isFrozen = true;
         }
 
         else if (Input.GetKeyDown(KeyCode.Space) && (this.isFrozen == true))
         {
-            Debug.Log("You're on the right track...");
-            this.rb2d.constraints = RigidbodyConstraints2D.None;
+            this.rb2d.constraints = RigidbodyConstraints2D.None; //Remove the restraints
             this.isFrozen = false;
         }
 

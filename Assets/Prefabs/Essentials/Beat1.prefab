@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142432354134944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -0.01, z: 0}
+  m_LocalPosition: {x: -4.6998878, y: 1.7298875, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4211968250976274}
@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   mouseIsover: 0
+  rb2d: {fileID: 50901619041602814}
   greenCircle: {fileID: 1269469726348174}
 --- !u!114 &114565023724486226
 MonoBehaviour:
@@ -268,7 +269,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 451796208
+  randomSeed: -2059140665
   InitialModule:
     serializedVersion: 3
     enabled: 1
