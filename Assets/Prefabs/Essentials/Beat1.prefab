@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 198618140556731114}
   - component: {fileID: 199113873576828032}
   - component: {fileID: 114993516624700776}
+  - component: {fileID: 114539221622104274}
   m_Layer: 0
   m_Name: Beat1
   m_TagString: beatball
@@ -185,7 +186,27 @@ MonoBehaviour:
   moveSpeed: 3
   mouseIsover: 0
   rb2d: {fileID: 50901619041602814}
+  isFrozen: 0
   greenCircle: {fileID: 1269469726348174}
+  ballDrag: {fileID: 114539221622104274}
+--- !u!114 &114539221622104274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142432354134944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a50f7d4db660d14d8acf1eb8446be97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotating: 0
+  screenPoint: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
+  degreesPerSec: 360
+  mouseSelect: {fileID: 114297775492184696}
+  beingDragged: 0
+  rb2d: {fileID: 50901619041602814}
 --- !u!114 &114565023724486226
 MonoBehaviour:
   m_ObjectHideFlags: 1
