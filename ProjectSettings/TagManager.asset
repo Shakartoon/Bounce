@@ -30,6 +30,7 @@ TagManager:
   - Armenian
   - Cinematic
   - hh
+  - particlesystem1
   layers:
   - Default
   - TransparentFX

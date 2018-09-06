@@ -28,6 +28,25 @@ public class PlayerCollision : MonoBehaviour {
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = true; 
 //		StartCoroutine (stopSparkles); 
 
+		foreach (ContactPoint2D contact in col.contacts)
+		{
+			Debug.DrawRay(contact.point, contact.normal, Color.black);
+		}
+
+
+		if (col.relativeVelocity.magnitude > 2) { 	
+
+			Debug.Log ("HI!"); 
+
+		} 
+
+
+		if (col.collider.tag == "hh") {
+
+			Services.audioManager.Play ("hh"); 
+
+		} 
+
 		if (col.collider.tag == "pink_rect") {
 		
 			Debug.Log ("COLLIDED!"); 
