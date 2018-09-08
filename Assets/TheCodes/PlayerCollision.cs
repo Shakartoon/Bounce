@@ -26,7 +26,8 @@ public class PlayerCollision : MonoBehaviour {
 		 
 
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = true; 
-//		StartCoroutine (stopSparkles); 
+//		StartCoroutine (stopSparkles);
+
 
 		foreach (ContactPoint2D contact in col.contacts)
 		{

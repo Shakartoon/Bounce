@@ -9,6 +9,7 @@ public class Flick : MonoBehaviour {
     public float springOffsetx = 10;
     public float springOffsety = 10;
 
+
 	// Use this for initialization
 	void Start () {
         spring = this.gameObject.GetComponent<SpringJoint2D>();
@@ -19,7 +20,7 @@ public class Flick : MonoBehaviour {
 	void Update () {
 
         if (mouseOver.mouseIsover == true){
-            spring.enabled = true;
+            spring.enabled = true; 
         }
         else if (mouseOver.mouseIsover == false)
         {
