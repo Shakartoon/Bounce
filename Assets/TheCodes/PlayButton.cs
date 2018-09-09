@@ -2,26 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayButton : MonoBehaviour {
+public class PlayButton : MonoBehaviour
+{
     GameObject[] balls;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         if (balls == null)
         {
             balls = GameObject.FindGameObjectsWithTag("beatball");
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Z))
+
+    // Update is called once per frame
+    void Update(){
+
+    }
+
+    void OnMouseOver()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-           foreach (GameObject beat1 in balls)
+            foreach (GameObject beat1 in balls)
             {
                 beat1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             }
-            
         }
-	}
+    }
 }
