@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleScript : MonoBehaviour {
+public class pitchshift : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

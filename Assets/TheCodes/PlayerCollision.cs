@@ -10,13 +10,19 @@ public class PlayerCollision : MonoBehaviour {
 //	public Transform sparkle; 
 
 	public GameObject sparkles; 
+	public bool colorChangeCollision; 
+
+	public Material firstMaterial; 
+
+	public GameObject hh; 
+
+
 
 	void Start () {
 
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = false;   
 
-	} 
-
+	}
 
 	void OnCollisionEnter2D (Collision2D col) {
 		Debug.Log ("Collision Detected.");
@@ -26,7 +32,34 @@ public class PlayerCollision : MonoBehaviour {
 		 
 
 //		sparkle.GetComponent<ParticleSystem> ().enableEmission = true; 
-//		StartCoroutine (stopSparkles); 
+//		StartCoroutine (stopSparkles);
+
+
+		foreach (ContactPoint2D contact in col.contacts)
+		{
+			Debug.DrawRay(contact.point, contact.normal, Color.black);
+		}
+
+
+		if (col.relativeVelocity.magnitude > 2) { 	
+
+			Debug.Log ("HI!"); 
+
+		} 
+
+
+		if (col.collider.tag == "hh") {
+
+			Services.audioManager.Play ("hh"); 
+			GameObject.FindGameObjectsWithTag ("hh"); 
+			hh.GetComponent<Renderer>().material.color = Color.yellow;  
+		} 
+
+		else if (col.collider.tag == "hh"){
+			
+			GameObject.FindGameObjectsWithTag ("hh"); 
+			hh.GetComponent<Renderer>().material.color = Color.black;  
+		}
 
 		if (col.collider.tag == "pink_rect") {
 		
@@ -120,11 +153,14 @@ public class PlayerCollision : MonoBehaviour {
 
             Services.audioManager.Play("High Hat");
 
+
         }
+
         if (col.collider.tag == "Highhat")
         {
 
             Services.audioManager.Play("Snare Drum");
+			colorChangeCollision = true; 
 
         }
         if (col.collider.tag == "Thoughts")
@@ -158,6 +194,7 @@ public class PlayerCollision : MonoBehaviour {
 
         }
     }
+
 
 //	IEnumerator stopSparkles()
 //	{

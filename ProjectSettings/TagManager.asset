@@ -30,6 +30,8 @@ TagManager:
   - Armenian
   - Cinematic
   - hh
+  - particlesystem1
+  - slider
   layers:
   - Default
   - TransparentFX
