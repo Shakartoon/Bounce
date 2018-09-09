@@ -130,9 +130,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -198,6 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sparkles: {fileID: 0}
+  colorChangeCollision: 0
+  firstMaterial: {fileID: 0}
+  hh: {fileID: 0}
 --- !u!114 &114582583410888652
 MonoBehaviour:
   m_ObjectHideFlags: 1
