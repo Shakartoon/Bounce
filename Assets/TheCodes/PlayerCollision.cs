@@ -14,6 +14,9 @@ public class PlayerCollision : MonoBehaviour {
 
 	public Material firstMaterial; 
 
+	public GameObject cy3; 
+	private Material m; 
+
 	public GameObject hh; 
 
 
@@ -98,6 +101,11 @@ public class PlayerCollision : MonoBehaviour {
 		if (col.collider.tag == "cy3") {
 
 			Services.audioManager.Play ("synth3"); 
+		    
+//			cy3 = GameObject.FindGameObjectsWithTag ("cy3"); 
+//			cy3.GetComponent<Renderer> ().material; //.SetColor("_Color", Color.red);
+//			GameObject.FindGameObjectsWithTag ("cy3").Material.color = Color.yellow;
+
 
 		} 
 

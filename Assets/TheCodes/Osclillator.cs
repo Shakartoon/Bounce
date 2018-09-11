@@ -9,7 +9,47 @@ public class Osclillator : MonoBehaviour {
 	private double phase; 
 	private double sampling_frequency = 48000.0; 
 
-	public float gain; 
+	public float gain = 1; 
+	public float volume = 0.1f; 
+
+	public float[] frequencies; 
+	public int thisFreq; 
+
+	void Start() {
+	
+	//	frequencies = new float[8]; 
+		frequencies [0] = 440; 
+		frequencies [1] = 494; 
+		frequencies [2] = 554; 
+		frequencies [3] = 587; 
+		frequencies [4] = 659; 
+		frequencies [5] = 740; 
+		frequencies [6] = 831; 
+		frequencies [7] = 880; 
+	
+	} 
+
+
+	void Update() {			
+
+
+	} 
+
+	void OnCollisionEnter2D (Collision2D col) {
+	
+		if (col.collider.tag == "hh") {
+   		//	frequency = frequencies 
+		}
+
+		if (col.collider.tag == "beatball") {
+			gain = volume; 
+			frequency = frequencies [thisFreq]; 
+			thisFreq += 1; 
+			thisFreq = thisFreq % frequencies.Length;
+		
+		} 
+
+	} 
 
 	void OnAudioFilterRead(float[] data, int channels) { 
 		increment = frequency * 2.0 * Mathf.PI / sampling_frequency;

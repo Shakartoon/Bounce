@@ -38,15 +38,17 @@ public class horizontaldrag : MonoBehaviour {
 		Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 		transform.position = curPosition;
 
+		//this restricts movement for the slider
 		if (transform.position.x >= -0.599f) {
 			Debug.Log ("PAST"); 
+			transform.position = new Vector3 (-0.599f, transform.position.y, transform.position.z); 
 		} 
 
+		if (transform.position.x <= -1.534f) {
+			Debug.Log ("PAST"); 
+			transform.position = new Vector3 (-1.534f, transform.position.y, transform.position.z); 
+		} 
 
-		//if (isRotating == true)
-		//{
-
-		//}
 	}
 
 }
