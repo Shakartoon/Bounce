@@ -17,13 +17,7 @@ public class colortest : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.A))
-		{
-			//Output the amount of materials before GameObject is destroyed
-			print("Materials " + Resources.FindObjectsOfTypeAll(typeof(Material)).Length);
-			//Destroy GameObject
-			Destroy(gameObject);
-		}
+
 	}
 
 	void OnMouseOver()
