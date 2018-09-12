@@ -32,6 +32,11 @@ TagManager:
   - hh
   - particlesystem1
   - slider
+  - Circlekeypart1
+  - Circlekeypart2
+  - Circlekeypart3
+  - Circlekeypart4
+  - CirclePuzzle
   layers:
   - Default
   - TransparentFX
