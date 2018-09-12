@@ -374,6 +374,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 483f84c0ec6d0a04eb1f11d85379edd3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &390282216 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947570301974430, guid: edefde33df07d404c8ccfb8b082fcd03,
+    type: 2}
+  m_PrefabInternal: {fileID: 840277129}
+--- !u!114 &390282218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390282216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2267b36e775d2d48a57b804b586c62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solved: 0
+  oneKissingtwo: 0
+  threeKissingfour: 0
 --- !u!1001 &558128449
 Prefab:
   m_ObjectHideFlags: 0
@@ -416,6 +435,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f83588a75d50f89459211d07b3d95c64, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &588565158 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1061094988238726, guid: edefde33df07d404c8ccfb8b082fcd03,
+    type: 2}
+  m_PrefabInternal: {fileID: 840277129}
+--- !u!114 &588565160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588565158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2267b36e775d2d48a57b804b586c62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solved: 0
+  oneKissingtwo: 0
+  threeKissingfour: 0
 --- !u!1001 &807348575
 Prefab:
   m_ObjectHideFlags: 0
@@ -497,10 +535,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 1712385426532258, guid: edefde33df07d404c8ccfb8b082fcd03, type: 2}
-      propertyPath: m_TagString
-      value: CirclePuzzle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edefde33df07d404c8ccfb8b082fcd03, type: 2}
   m_IsPrefabParent: 0
@@ -546,10 +580,6 @@ Prefab:
     - target: {fileID: 1712385426532258, guid: edefde33df07d404c8ccfb8b082fcd03, type: 2}
       propertyPath: m_Name
       value: PuzzleKeyp2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1712385426532258, guid: edefde33df07d404c8ccfb8b082fcd03, type: 2}
-      propertyPath: m_TagString
-      value: CirclePuzzle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edefde33df07d404c8ccfb8b082fcd03, type: 2}
@@ -600,6 +630,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d188176e628736f4bb390881ec2ac221, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1134366634 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1061094988238726, guid: edefde33df07d404c8ccfb8b082fcd03,
+    type: 2}
+  m_PrefabInternal: {fileID: 825394684}
+--- !u!114 &1134366636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134366634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2267b36e775d2d48a57b804b586c62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solved: 0
+  oneKissingtwo: 0
+  threeKissingfour: 0
 --- !u!1001 &1161350838
 Prefab:
   m_ObjectHideFlags: 0
@@ -745,6 +794,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a84114dbb1408014f891f81fe36cb1d3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1301275016 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1947570301974430, guid: edefde33df07d404c8ccfb8b082fcd03,
+    type: 2}
+  m_PrefabInternal: {fileID: 825394684}
+--- !u!114 &1301275018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301275016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2267b36e775d2d48a57b804b586c62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solved: 0
+  oneKissingtwo: 0
+  threeKissingfour: 0
 --- !u!1001 &1314672853
 Prefab:
   m_ObjectHideFlags: 0
@@ -830,12 +898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860611cc84144924c8a95e2a1670d236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Offset: {x: 0, y: 0}
-  IsUndoEnabled: 1
-  m_brushTilemap: {fileID: 0}
-  m_paintMode: 0
-  m_pressedPosition: {x: 0, y: 0}
-  m_isDragging: 0
 --- !u!114 &1517689565
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -847,54 +909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dec3ca0fe88506448df84e8bf55b2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowGrid: 1
-  InnerPadding: 0
-  ColliderDepth: 0.1
-  ColliderType: 0
-  Collider2DType: 0
-  ShowColliderNormals: 1
-  ColliderDisplayMode: 0
-  IsUndoEnabled: 0
-  SortOrder: 0
-  m_sortingLayer: 0
-  m_sortingLayerName: Default
-  m_orderInLayer: 0
-  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_tintColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  m_pixelSnap: 0
-  m_isVisible: 1
-  m_allowPaintingOutOfBounds: 1
-  m_autoShrink: 0
-  m_enableUndoWhilePainting: 1
-  m_isTrigger: 0
-  m_physicMaterial: {fileID: 0}
-  m_physicMaterial2D: {fileID: 0}
-  m_cellSize: {x: 0, y: 0}
-  m_mapBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_tileset: {fileID: 0}
-  m_minGridX: 0
-  m_minGridY: 0
-  m_maxGridX: 0
-  m_maxGridY: 0
-  m_parentTilemapGroup: {fileID: 0}
-  m_parallaxFactor: {x: 1, y: 1}
-  m_chunkRendererProperties:
-    castShadows: 0
-    receiveShadows: 0
-    useLightProbes: 0
-    reflectionProbeUsage: 0
-    anchorOverride: {fileID: 0}
-  m_markForUpdateMesh: 0
-  m_markSceneDirtyOnNextUpdateMesh: 0
-  m_applyContactsEmptyFix: 0
-  m_preRenderPosSet: 0
-  m_preRenderPos: {x: 0, y: 0, z: 0}
 --- !u!4 &1517689566
 Transform:
   m_ObjectHideFlags: 1

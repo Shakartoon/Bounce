@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4240047938956040}
   - component: {fileID: 61155102652754002}
   m_Layer: 0
-  m_Name: Keycollider1
+  m_Name: Keycollider1part2
   m_TagString: Circlekeypart2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114071550761237780}
   m_Layer: 0
   m_Name: PuzzleKeyp1
-  m_TagString: Untagged
+  m_TagString: CirclePuzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4698823609136426}
   - component: {fileID: 61636552424069316}
   m_Layer: 0
-  m_Name: Keycollider2
+  m_Name: Keycollider2part3
   m_TagString: Circlekeypart4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1712385426532258}
   m_LocalRotation: {x: -0, y: -0, z: 0.7194215, w: 0.6945739}
-  m_LocalPosition: {x: -5.203, y: -0.272, z: 0}
+  m_LocalPosition: {x: -4.49, y: -0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4240047938956040}
