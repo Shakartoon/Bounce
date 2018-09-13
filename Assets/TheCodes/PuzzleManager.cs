@@ -18,29 +18,27 @@ public class PuzzleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((oneKissingtwo == true) && (threeKissingfour == true))
         {
-            solved = true;
-        }
+            if (this.collider.tag == "Circlekeypart2")
+            {
+                oneKissingtwo = true;
+            }
 
-        if (solved == true)
-        {
-            Debug.Log("Solved!");
-        }
-    }
+            if (this.collider.tag == "Circlekeypart3")
+            {
+                threeKissingfour = true;
+            }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.collider.tag == "Circlekeypart2")
-        {
-            oneKissingtwo = true;
-        }
+            if ((oneKissingtwo == true) && (threeKissingfour == true))
+            {
+                solved = true;
+            }
 
-        if (col.collider.tag == "Circlekeypart3")
-        {
-            threeKissingfour = true;
+            if (solved == true)
+            {
+                Debug.Log("Solved!");
+            }
         }
-
     }
 }
 
