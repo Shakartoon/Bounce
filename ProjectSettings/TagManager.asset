@@ -32,6 +32,15 @@ TagManager:
   - hh
   - particlesystem1
   - slider
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - SoundMakingObject
+  - Ball
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,11 @@ using UnityEngine;
 public class clockwiserotation : MonoBehaviour {
 
 
+	public float rotateX; 
+	public float rotateY; 
+	public float rotateZ; 
+	public float speed = -3; 
+
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +19,8 @@ public class clockwiserotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.Rotate(0, 0, Time.deltaTime * -3, Space.World);
-
+		transform.Rotate(rotateX, rotateY, Time.deltaTime * speed, Space.World);
+		//if rotates around, stop at original location for several seconds, then rotate again. 
 		
 	}
 }

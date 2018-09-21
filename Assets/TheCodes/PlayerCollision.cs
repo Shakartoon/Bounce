@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour {
 
-//	public GameObject objeckt;  
-
-//	public ParticleSystem.TriggerModule sparkle;
-//	public Transform sparkle; 
 
 	public GameObject sparkles; 
 	public bool colorChangeCollision; 
@@ -18,25 +14,22 @@ public class PlayerCollision : MonoBehaviour {
 	private Material m; 
 
 	public GameObject hh; 
-
-
+	public Vector3 defPos;
+	Rigidbody2D rb;
 
 	void Start () {
-
-//		sparkle.GetComponent<ParticleSystem> ().enableEmission = false;   
-
+		defPos = transform.position;
+		rb = GetComponent<Rigidbody2D> ();
 	}
-
+	void Update(){
+		if (Camera.main.WorldToViewportPoint (transform.position).y < -.2f) {
+			rb.velocity = Vector3.zero;
+			transform.position = defPos;
+		}
+	}
 	void OnCollisionEnter2D (Collision2D col) {
 		Debug.Log ("Collision Detected.");
-					
-//		SpriteRenderer c = sparkles.GetComponent<SpriteRenderer> ();
-//		c.enabled = true;  
-		 
-
-//		sparkle.GetComponent<ParticleSystem> ().enableEmission = true; 
-//		StartCoroutine (stopSparkles);
-
+	
 
 		foreach (ContactPoint2D contact in col.contacts)
 		{
@@ -64,10 +57,16 @@ public class PlayerCollision : MonoBehaviour {
 			hh.GetComponent<Renderer>().material.color = Color.black;  
 		}
 
+		if (col.collider.tag == "a") {
+
+
+			Services.audioManager.Play ("A"); 
+		} 
+
+
 		if (col.collider.tag == "pink_rect") {
 		
 			Debug.Log ("COLLIDED!"); 
-
 			Services.audioManager.Play ("drumloop1"); 
 			 
 		} 

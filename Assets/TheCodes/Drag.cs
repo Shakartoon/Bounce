@@ -38,10 +38,6 @@ public class Drag : MonoBehaviour {
 		Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 		transform.position = curPosition;
 
-        //if (isRotating == true)
-        //{
-            
-        //}
 	}
 
 }
