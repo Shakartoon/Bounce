@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 //Use the PointerDown and PointerUP interfaces to detect a mouse down and up on a ui element
-public class recordScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
+public class recorderScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 	AudioClip recording;
 	//Keep this one as a global variable (outside the functions) too and use GetComponent during start to save resources
 	AudioSource audioSource;
@@ -20,7 +20,7 @@ public class recordScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 	public void OnPointerUp(PointerEventData eventData)
 	{
 		//End the recording when the mouse comes back up, then play it
-		Microphone.End("");
+		Microphone.End("Ended");
 
 		//Trim the audioclip by the length of the recording
 		AudioClip recordingNew = AudioClip.Create(recording.name, (int)((Time.time - startRecordingTime) * recording.frequency), recording.channels, recording.frequency, false);
@@ -41,12 +41,12 @@ public class recordScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 		int minFreq;
 		int maxFreq;
 		int freq = 44100;
-		Microphone.GetDeviceCaps("", out minFreq, out maxFreq);
+		Microphone.GetDeviceCaps("GetDeviceCaps", out minFreq, out maxFreq);
 		if (maxFreq < 44100)
 			freq = maxFreq;
 
 		//Start the recording, the length of 300 gives it a cap of 5 minutes
-		recording = Microphone.Start("", false, 300, 44100);
+		recording = Microphone.Start("Recording", false, 300, 44100);
 		startRecordingTime = Time.time;
 	}
 

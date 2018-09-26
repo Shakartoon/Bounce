@@ -17,24 +17,31 @@ public class PlayerCollision : MonoBehaviour {
 	public Vector3 defPos;
 	Rigidbody2D rb;
 
+	public GameObject happyAnim; 
+
 	void Start () {
 		defPos = transform.position;
 		rb = GetComponent<Rigidbody2D> ();
 	}
 	void Update(){
-		if (Camera.main.WorldToViewportPoint (transform.position).y < -.2f) {
+		
+		if (transform.position.y < -5.7) {
+			Debug.Log ("Yay");
 			rb.velocity = Vector3.zero;
-			transform.position = defPos;
+			transform.position = new Vector3(transform.position.x, 5.723693f);
 		}
 	}
 	void OnCollisionEnter2D (Collision2D col) {
 		Debug.Log ("Collision Detected.");
+
+		transform.GetChild (1).GetComponent<ParticleSystem> ().Play() ;
 	
 
 		foreach (ContactPoint2D contact in col.contacts)
 		{
 			Debug.DrawRay(contact.point, contact.normal, Color.black);
 		}
+
 
 
 		if (col.relativeVelocity.magnitude > 2) { 	

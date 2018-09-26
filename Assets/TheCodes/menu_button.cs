@@ -5,13 +5,12 @@ using UnityEngine;
 public class menu_button : MonoBehaviour {
 
 
-    public GameObject menuPrefab;
-    //public bool mousePressed = false; 
-    public bool menuOpen = false;
+	public GameObject exampleCube; 
+	public GameObject menuBox; 
+	public GameObject xButton; 
+    public bool buttonPressed = false;
 
     void Start() {
-
-        menuPrefab.SetActive(false);
 
     }
 
@@ -23,17 +22,17 @@ public class menu_button : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-
             Debug.Log("Licked");
-            menuPrefab.SetActive(true);
-            menuOpen = true;
+			menuBox.SetActive(true);
+            buttonPressed = true;
         }
+
+		if (Input.GetMouseButtonDown(1)) {
+
+			menuBox.SetActive(false);
+
+		} 
+			
     }
-    void OnMouseDown()
-    {
-        if (menuOpen == true && (Input.GetMouseButtonDown(0)))
-            {
-            menuPrefab.SetActive(false);
-        }
-    }
+
 }
